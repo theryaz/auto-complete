@@ -1,6 +1,6 @@
 {
   "name": "veden-auto-complete",
-  "version": "0.16.1",
+  "version": "0.16.2",
   "description": "Angular Input Autocomplete. Forked from @ngui/auto-complete",
   "license": "MIT",
   "main": "dist/auto-complete.umd.js",
