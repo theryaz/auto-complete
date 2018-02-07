@@ -3,7 +3,7 @@ var webpack = require('webpack');
 
 var config = {
     entry: {
-        '@ngui/auto-complete': path.join(__dirname, 'src', 'index.ts')
+        'veden-auto-complete': path.join(__dirname, 'src', 'index.ts')
     },
     resolve: {
         extensions: ['.ts', '.js', '.json', '.css', '.html']

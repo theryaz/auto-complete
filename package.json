@@ -1,7 +1,7 @@
 {
-  "name": "@ngui/auto-complete",
+  "name": "veden-auto-complete",
   "version": "0.16.1",
-  "description": "Angular Input Autocomplete",
+  "description": "Angular Input Autocomplete. Forked from @ngui/auto-complete",
   "license": "MIT",
   "main": "dist/auto-complete.umd.js",
   "module": "dist/index.js",
@@ -60,16 +60,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ng2-ui/auto-complete.git"
+    "url": "git+https://github.com/theryaz/auto-complete.git"
   },
   "author": "",
   "bugs": {
-    "url": "https://github.com/ng2-ui/auto-complete/issues"
+    "url": "https://github.com/theryaz/auto-complete/issues"
   },
-  "homepage": "https://github.com/ng2-ui/auto-complete#readme",
+  "homepage": "https://github.com/theryaz/auto-complete#readme",
   "keywords": [
     "angular",
     "auto-complete",
+    "veden",
     "input",
     "select"
   ]

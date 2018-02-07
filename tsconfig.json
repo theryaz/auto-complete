@@ -23,7 +23,7 @@
     "outDir": "dist",
     "baseUrl": "src",
     "paths": {
-      "@ngui/auto-complete": ["./index"]
+      "veden-auto-complete": ["./index"]
     }
   },
   "files": [

@@ -1,7 +1,7 @@
-# auto-complete
+# veden-auto-complete
 
-## IMPORTANT: NOT-MATAINED.
-Accepting volunteers and ready to transfer ownership.
+Forked from [ng2-ui auto-complete](https://github.com/ng2-ui/auto-complete)
+
 
 <a href="https://rawgit.com/ng2-ui/auto-complete/master/app/index.html">
   <img src="http://i.imgur.com/dAmheg0.png" />
@@ -16,10 +16,10 @@ _ngModel_ http://plnkr.co/edit/3pB1Gx?p=preview
 **`Reactive Forms`**
 
  _FormGroup_  http://plnkr.co/edit/2osUq6?p=preview
-  [issue #49](https://github.com/ng2-ui/auto-complete/issues/49)
+  [issue #49](https://github.com/theryaz/auto-complete/issues/49)
 
 _FormControl_ http://plnkr.co/edit/A5CW2e?p=preview
-  [issue #100](https://github.com/ng2-ui/auto-complete/issues/100)
+  [issue #100](https://github.com/theryaz/auto-complete/issues/100)
 
 
 **`Material Design`**
@@ -37,17 +37,17 @@ _FormControl_ http://plnkr.co/edit/A5CW2e?p=preview
 
 ## Install
 
-1. install @ngui/auto-complete
+1. install veden-auto-complete
 
-        $ npm install @ngui/auto-complete --save
+        $ npm install veden-auto-complete --save
 
 2. add `map` and `packages` to your `systemjs.config.js` unless you are using `webpack`
 
-        map['@ngui/auto-complete'] = 'node_modules/@ngui/auto-complete/dist/auto-complete.umd.js';
+        map['veden-auto-complete'] = 'node_modules/veden-auto-complete/dist/auto-complete.umd.js';
 
 3. import NguiAutoCompleteModule to your AppModule
 
-        import { NguiAutoCompleteModule } from '@ngui/auto-complete';
+        import { NguiAutoCompleteModule } from 'veden-auto-complete';
 
         @NgModule({
           imports: [BrowserModule, FormsModule, NguiAutoCompleteModule],
@@ -130,7 +130,7 @@ please send me email to `allenhwkim AT gmail.com` with your github id.
 
 ### To start
 
-    $ git clone https://github.com/ng2-ui/auto-complete.git
+    $ git clone https://github.com/theryaz/auto-complete.git
     $ cd auto-complete
     $ npm install
     $ npm start
