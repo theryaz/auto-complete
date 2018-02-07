@@ -117,8 +117,15 @@ var NguiAutoCompleteComponent = (function () {
         this.dropdownVisible = false;
     };
     NguiAutoCompleteComponent.prototype.findItemFromSelectValue = function (selectText) {
+        var listFormatter = this.autoComplete.listFormatter;
         var matchingItems = this.filteredList
-            .filter(function (item) { return ('' + item) === selectText; });
+            .filter(function (item) {
+              if(listFormatter){
+                return ('' + item[listFormatter]) === selectText;
+              }else{
+                return ('' + item) === selectText;
+              }
+            });
         return matchingItems.length ? matchingItems[0] : null;
     };
     NguiAutoCompleteComponent.prototype.reloadList = function (keyword) {
