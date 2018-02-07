@@ -1,3 +1,7 @@
+### [0.16.2]
+- Forked from ngui-auto-complete
+- Renamed to veden-auto-complete
+- Fixed bug where object would get replaced by string when pressing tab
 ### [0.14.2]
 - return keyword if no items were selected
 ### [0.14.1]
