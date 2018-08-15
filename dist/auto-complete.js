@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
-require("rxjs/operators");
+require("rxjs/add/operator/map");
 /**
  * provides auto-complete related utility functions
  */
