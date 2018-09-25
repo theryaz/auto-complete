@@ -1,7 +1,7 @@
 import { Injectable, Optional } from "@angular/core";
 import { Http, Response } from "@angular/http";
 import { Observable } from "rxjs";
-import "rxjs/add/operator/map";
+import { map } from 'rxjs/operators';
 
 /**
  * provides auto-complete related utility functions
@@ -66,17 +66,14 @@ export class NguiAutoComplete {
     let url = this.source.replace(replacementWord, keyword);
 
     return this.http.get(url)
-      .map(resp => resp.json())
-      .map(resp => {
-        let list = resp.data || resp;
-
-        if (this.pathToData) {
-          let paths = this.pathToData.split(".");
-          paths.forEach(prop => list = list[prop]);
-        }
-
-        return list;
-      });
+		.pipe(map((resp: Response) => resp.json()))
+		.pipe(map(resp => {
+      let list = resp['data'] || resp;
+      if (this.pathToData) {
+        let paths = this.pathToData.split(".");
+        paths.forEach(prop => list = list[prop]);
+      }
+      return list;
+    }));
   };
 }
-
